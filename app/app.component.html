@@ -1,0 +1,25 @@
+<div class="container"><br>
+  <table class="table table">
+  <div class = "myCSS row ">
+  <br><br>
+  <form class="form form-group column" role="form">
+    <input [(ngModel)]="Number1" name = "Number1" type="number" style="height:70px;" class="form-control input-lg mb-2 mr-sm-2" placeholder="Enter a Number">
+    <input [(ngModel)]="Number2" name = "Number2" type="number" style="height:70px;" class="form-control input-lg mb-2 mr-sm-2" placeholder="Enter Another Number">
+    <div class="form-check mb-2 mr-sm-2">
+    </div>    
+    &nbsp;
+  <button (click)="calculate(1)" type="button" class="button">Add</button>&nbsp;&nbsp;
+  <button (click)="calculate(2)" type="button" class="button">Substract</button>&nbsp;&nbsp;
+  <button (click)="calculate(3)" type="button" class="button">Multiply</button><br>&nbsp;&nbsp;
+  <button (click)="calculate(4)" type="button" class="button">Divide </button>&nbsp;&nbsp;
+  <button (click)="calculate(5)" type="button" class="button">Percentage</button>&nbsp;&nbsp;
+  <button (click)="calculate(6)" type="button" class="button">Clear</button>
+</form>
+<div class="column">
+  <h1 style="font-family: Comic Sans MS; font-size: 8rem">{{Answer}}</h1>
+  <h5 style="font-family: Comic Sans MS; color: red; font-size: 3rem;font-weight: bold">{{ErrorMessage}}</h5>
+ <span class="blink" style="font-family: Comic Sans MS; color: rgb(0, 0, 0); font-size: 1.5rem;">{{percentageInfo}}</span>
+</div>
+</div>
+</table>
+</div>
